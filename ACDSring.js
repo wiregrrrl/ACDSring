@@ -111,4 +111,3 @@ getRandomInt(min, max) {
 }
 
 window.customElements.define("webring-css", WebRing);
-
