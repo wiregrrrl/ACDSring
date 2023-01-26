@@ -41,7 +41,7 @@ p{
 <div class="webring">
 
 <div id="copy">
-    
+
 </div>
 
 </div>`;
@@ -87,7 +87,7 @@ connectedCallback() {
         <p>
             <a href="${matchedSite.url}">${matchedSite.name}</a> is owned by ${matchedSite.owner}
         </p>
-        
+
         <p>
             <a href="${sites[prevSiteIndex].url}">[Prev]</a>
             <a href="${sites[nextSiteIndex].url}">[Next]</a>
