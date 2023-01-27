@@ -10,8 +10,8 @@ To add the widget to your page, go to the **PASTE_THIS_INTO_UR_SITE.html** file 
 Make sure the URL is the EXACT same as the one in the JSON file listing all the sites.
 From now on the URLs should NOT have a / at the end
 
-EXAMPLE: 
-  https://XXX.neocities.org   = CORRECT
+EXAMPLE: <br>
+  https://XXX.neocities.org   = CORRECT<br>
   https://XXX.neocities.org/   = INCORRECT
   
 Also please be patient! The database listing the sites takes some time to update so it may be a few minutes before the widget works after being added.  
