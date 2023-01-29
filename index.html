@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ACDS Webring</title>
+    <style>
+      /* TODO: This. */
+    </style>
+  </head>
+  <body>
+    <h2>Webring for the ACDS community</h2>
+
+    <h2>Adding Widget</h2>
+
+    <p>To add the widget to your page, go to the <a href="https://github.com/wiregrrrl/ACDSring/blob/main/PASTE_THIS_INTO_UR_SITE.html"><b>PASTE_THIS_INTO_UR_SITE.html</b></a> file where you will find the code :3</p>
+
+    <p>Make sure the URL is the EXACT same as the one in the <a href="https://github.com/wiregrrrl/ACDSring/blob/main/webring.json">JSON file</a> listing all the sites.</p>
+    <p>From now on the URLs should NOT have a / at the end</p>
+
+    <p>EXAMPLE: <br>
+      https://XXX.neocities.org   = CORRECT<br>
+      https://XXX.neocities.org/   = INCORRECT</p>
+      
+    <p>Also please be patient! The database listing the sites takes some time to update so it may be a few minutes before the widget works after being added.</p>
+      
+    <h2>Wanna join?</h2>
+
+    <p>DM me on discord</p>
+
+    <h2>Who's in it?</h2>
+      <!--TODO: Add some loading thing here [via css] so it looks less jarring when the memberlist pops in-->
+    <ul id="memberlist">
+    </ul>
+  </body>
+  <script type="text/javascript">
+    const list = document.getElementById("memberlist");
+    fetch("https://raw.githubusercontent.com/wiregrrrl/ACDSring/main/webring.json")
+      .then((response) => response.json())
+      .then((json) => {
+        json.forEach(site => {
+          var elem = document.createElement("li");
+          elem.innerHTML = site.owner + ' - ' + '<a href="' + site.url + '" target="_blank">' + site.name + '</a>';
+          list.appendChild(elem);
+        });
+      });
+  </script>
+</html>
